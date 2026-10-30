@@ -1,0 +1,16 @@
+$ curl -sS -o composer-setup.php https://getcomposer.org/installer
+-rw-rw---- 1 root root 59524 Oct 30 12:36 composer-setup.php
+$ curl -sS -o installer.sig https://composer.github.io/installer.sig
+c8b085408188070d5f52bcfe4ecfbee5f727afa458b2573b8eaaf77b3419b0bf2768dc67c86944da1544f06fa544fd47
+$ php -r (the official check: SHA-384 of the installer must equal the published signature)
+Installer verified
+$ php composer-setup.php
+All settings correct for using Composer
+Downloading...
+The "https://getcomposer.org/versions" file could not be downloaded: preg_split(): Passing null to parameter #3 ($limit) of type int is deprecated
+SSL: Handshake timed out
+Failed to open stream: Cannot connect to HTTPS server through proxy
+Retrying...
+Failed to decode zlib stream
+$ php composer.phar --version
+Could not open input file: composer.phar

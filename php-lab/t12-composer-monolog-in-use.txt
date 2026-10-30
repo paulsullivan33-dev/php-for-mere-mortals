@@ -1,0 +1,37 @@
+$ php ../composer-lab/composer.phar require monolog/monolog
+./composer.json has been created
+Running composer update monolog/monolog
+Loading composer repositories with package information
+Updating dependencies
+Lock file operations: 2 installs, 0 updates, 0 removals
+  - Locking monolog/monolog (3.12.1)
+  - Locking psr/log (3.0.2)
+Writing lock file
+Installing dependencies from lock file (including require-dev)
+Package operations: 2 installs, 0 updates, 0 removals
+  - Downloading psr/log (3.0.2)
+  - Downloading monolog/monolog (3.12.1)
+ 0/2 [>---------------------------]   0%
+ 1/2 [==============>-------------]  50%
+ 2/2 [============================] 100%
+  - Installing psr/log (3.0.2): Extracting archive
+  - Installing monolog/monolog (3.12.1): Extracting archive
+ 0/2 [>---------------------------]   0%
+ 2/2 [============================] 100%
+12 package suggestions were added by new dependencies, use `composer suggest` to see details.
+Generating autoload files
+1 package you are using is looking for funding.
+Use the `composer fund` command to find out more!
+No security vulnerability advisories found.
+Using version ^3.12 for monolog/monolog
+
+$ cat composer.json
+{
+    "require": {
+        "monolog/monolog": "^3.12"
+    }
+}
+$ php use-monolog.php
+Logged. The Logger class came from: /home/hatch/workspace/php-labwork/greet/vendor/monolog/monolog/src/Monolog/Logger.php
+$ cat noticeboard.log
+[2026-10-30T12:56:53.827249+00:00] noticeboard.INFO: Notice pinned {"name":"Priya","notice":"Yoga moves to Thursdays"} []

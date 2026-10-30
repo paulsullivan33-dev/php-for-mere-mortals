@@ -1,0 +1,13 @@
+$ curl -s http://127.0.0.1:8090/ | grep "Notices ("
+<h2>Notices (2)</h2>
+
+$ curl -s -X POST --data "notice=A notice with no name attached" http://127.0.0.1:8090/ | grep -E "error|Notices \("
+<p class="error">Please give your name and a notice — both are needed.</p>
+<h2>Notices (2)</h2>
+
+$ curl -s -X POST --data "name=Tom&notice=" http://127.0.0.1:8090/ | grep -E "error|Notices \("
+<p class="error">Please give your name and a notice — both are needed.</p>
+<h2>Notices (2)</h2>
+
+$ php -r (row count in the database afterwards)
+2 rows

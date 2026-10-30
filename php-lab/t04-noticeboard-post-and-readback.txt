@@ -1,0 +1,39 @@
+$ curl -s -i -X POST --data "name=Priya&notice=Yoga moves to Thursdays" http://127.0.0.1:8090/
+HTTP/1.1 303 See Other
+Host: 127.0.0.1:8090
+Date: Fri, 30 Oct 2026 12:15:49 GMT
+Connection: close
+X-Powered-By: PHP/8.3.6
+Location: /
+Content-type: text/html; charset=UTF-8
+
+
+$ curl -s http://127.0.0.1:8090/
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Maple Street Hall — Noticeboard</title>
+</head>
+<body>
+<h1>Maple Street Hall — Noticeboard</h1>
+
+
+<form method="post" action="/">
+<p><label>Your name
+<input type="text" name="name" required></label></p>
+<p><label>Notice
+<input type="text" name="notice" required></label></p>
+<p><button type="submit">Pin it</button></p>
+</form>
+
+<h2>Notices (1)</h2>
+<article>
+<p>Yoga moves to Thursdays</p>
+<p><small>Posted by Priya at 2026-10-30 12:15:49 UTC</small></p>
+
+</article>
+</body>
+</html>
+$ php -r (a separate process reads the database file directly)
+1 | Priya | Yoga moves to Thursdays | 2026-10-30 12:15:49

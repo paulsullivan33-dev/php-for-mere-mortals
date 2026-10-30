@@ -1,0 +1,18 @@
+$ php strings.php
+Hello Priya, the hall seats 120.
+Hello $name — single quotes do not interpolate.
+strlen: 5 bytes; mb_strlen: 4 characters
+mb_substr Café -> Caf
+Jumble SALE on Saturday
+QUIET PLEASE / loud
+Jumble SALE on Sunday
+tea + coffee + biscuits
+Notice 007 of 42
+Price found: £25 per hour
+Call [phone number] to book
+Array
+(
+    [0] => indoor
+    [1] => all ages
+    [2] => free
+)

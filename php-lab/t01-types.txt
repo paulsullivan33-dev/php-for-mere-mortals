@@ -1,0 +1,12 @@
+$ php types.php
+42                 integer
+3.75               double
+'Maple Street Hall' string
+true               boolean
+NULL               NULL
+int(8)
+bool(true)
+bool(false)
+bool(false)
+24 chairs in 4 rows
+TypeError caught: chairs(): Argument #1 ($rows) must be of type int, float given, called in /home/hatch/workspace/php-labwork/cli/types.php on line 29

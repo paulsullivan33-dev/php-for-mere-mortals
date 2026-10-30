@@ -1,0 +1,13 @@
+$ curl -sS -o composer.phar https://getcomposer.org/download/latest-stable/composer.phar
+-rw-rw---- 1 root root 3786815 Oct 30 12:55 composer.phar
+$ curl -sS https://getcomposer.org/download/latest-stable/composer.phar.sha256sum
+9674f12a2a181100d889ebfd0b4510805b3e94cea57869b14b383753d602599b  composer.phar
+$ php -r (SHA-256 of the phar, computed locally)
+9674f12a2a181100d889ebfd0b4510805b3e94cea57869b14b383753d602599b
+$ php composer.phar --version
+Composer plugins have been disabled for safety in this non-interactive session.
+Set COMPOSER_ALLOW_SUPERUSER=1 if you want to allow plugins to run as root/super user.
+Do not run Composer as root/super user! See https://getcomposer.org/root for details
+Composer version 2.11.0 2026-10-29 10:23:20
+PHP version 8.3.6 (/home/hatch/workspace/php-labwork/root/usr/bin/php8.3)
+Run the "diagnose" command to get more detailed diagnostics output.

@@ -1,0 +1,14 @@
+$ curl -s -X POST --data-urlencode "name=Eve <script>alert(1)</script>" --data-urlencode "notice=Free chairs <b>this weekend</b> & \"quotes\"" http://127.0.0.1:8090/   (303 redirect, body empty)
+HTTP 303
+
+$ curl -s http://127.0.0.1:8090/ | grep -A2 "Free chairs"
+<p>Free chairs &lt;b&gt;this weekend&lt;/b&gt; &amp; &quot;quotes&quot;</p>
+<p><small>Posted by Eve &lt;script&gt;alert(1)&lt;/script&gt; at 2026-10-30 12:15:49 UTC</small></p>
+
+
+$ curl -s http://127.0.0.1:8090/ | grep -c "<script>alert"   (raw, unescaped script tag in the page)
+0
+0 — no match; grep exits 1
+
+$ what the database actually stored (read back raw):
+Eve <script>alert(1)</script> | Free chairs <b>this weekend</b> & "quotes"

@@ -1,0 +1,5 @@
+$ php database.php
+Choir practice — 30 seats
+O'Brien's quiz night — 48 seats
+Bookings stored: 3
+The database is one file: /home/hatch/workspace/php-labwork/cli/hall.sqlite (12288 bytes)

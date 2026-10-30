@@ -1,0 +1,11 @@
+$ php arrays.php
+3 notices
+  [0] Lost glove, left on the piano
+  [1] Hall closed early on Friday
+  [2] Jumble sale — helpers needed
+Maple Street Hall seats 120
+Priya: Yoga moves to Thursdays
+Tom: Spare ladder in the store room
+Alphabetical first: Hall closed early on Friday
+2 notices longer than 27 characters
+Kitchen key: not listed
